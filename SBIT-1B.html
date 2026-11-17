@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Birthday System</title>
+    <link rel="stylesheet" href="SBIT-1B.css">
+</head>
+<body>
+
+    <header>
+        <h1>SBIT-1B Birthdays 💙🤍 </h1>
+        <p>This website would contain the birthday of SBIT-1B Students</p>
+    </header>
+
+    <main class="container">
+
+        <section class="dashboard">
+            <div class="stat-card">
+                <h2 id="totalStudents">0</h2>
+                <p>Total Students</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="withBirthday">0</h2>
+                <p>With Birthday</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 id="missingBirthday">0</h2>
+                <p>Missing Birthday</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add New Student</h2>
+
+            <form id="studentForm">
+                <input
+                    type="text"
+                    id="surname"
+                    placeholder="Enter surname"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="birthday"
+                >
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="records-section">
+            <h2>Student Records</h2>
+
+            <div class="controls">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search surname..."
+                >
+
+                <select id="filterSelect">
+                    <option value="all">All Students</option>
+                    <option value="with">With Birthday</option>
+                    <option value="missing">Missing Birthday</option>
+                </select>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Surname</th>
+                            <th>Birthday</th>
+                            <th>Upcoming Birthday</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="SBIT-1B.js"></script>
+</body>
+</html>
