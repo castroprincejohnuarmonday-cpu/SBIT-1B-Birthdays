@@ -13,7 +13,7 @@ const initialStudents = [
     { surname: "Cantero", birthday: "2008-08-29" },
     { surname: "Capistrano", birthday: "2008-04-19" },
     { surname: "Castillo", birthday: "2008-03-17" },
-    { surname: "Castro", birthday: "1999-01-07" },
+    { surname: "Castro", birthday: "2004-01-07" },
     { surname: "Coquilla", birthday: "2008-09-27" },
     { surname: "Cortez", birthday: "" },
     { surname: "Cruz", birthday: "" },
